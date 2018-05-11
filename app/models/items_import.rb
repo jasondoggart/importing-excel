@@ -6,6 +6,7 @@ class ItemsImport
 
   def initialize(attributes={})
     attributes.each { |name, value| send("#{name}=", value) }
+    byebug
   end
 
   def persisted?
